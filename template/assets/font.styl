@@ -1,0 +1,35 @@
+@import "var.styl"
+
+$normal_size = 30upx
+// 22 24 26 28 30 32 34 36 38
+$f_name = xxxs xxs xs s m l xl xxl xxxl xxxxl
+
+// m 字号的索引
+$m_index = 4
+
+.f
+  for name, i in $f_name
+    $font_size = $normal_size + (i - $m_index) * 2
+    &-{name}
+      // font-family $normal-font
+      font-size $font_size
+    &-b-{name}
+      font-size $font_size
+      font-weight bold
+
+// 灰度颜色值
+$color_name = b xs s m l w
+
+.c-l
+  for name, i in $color_name
+    &-{name}
+      color #333 * i
+.c
+  &-green
+    color $colorMain
+  &-white
+    color $white
+  &-red
+    color $red
+  &-orange
+    color $orange

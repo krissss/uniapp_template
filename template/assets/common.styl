@@ -1,0 +1,157 @@
+@import "var.styl"
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1133307_avu0ksqmigq.ttf') format('truetype');
+}
+.iconfont 
+  font-family 'iconfont'
+page
+  font-size 28upx
+
+.height-100
+  height 100%
+.width-100
+  width 100%
+
+.text-center
+  text-align center
+
+button:after
+  border 0
+
+// 兼容
+img
+  vertical-align bottom
+
+uni-image
+  width 100%
+  display block
+  vertical-align bottom
+
+image
+  width 100%
+  display: block;
+  vertical-align: bottom;
+
+// 背景色
+.bg-main
+  background-color $colorMain
+.bg-grey
+  background-color $colorGrey
+.bg-white
+  background-color #fff
+
+// 字体
+.font32
+  font-size 32upx
+.font28
+  font-size 28upx
+.font24
+  font-size 24upx
+
+.font-grey
+  color $colorDarkGrey
+.font-link
+  color #4A90E2
+
+// 边距
+.p-20
+  padding 20upx
+.p-l-20
+  padding-left 20upx
+.p-t-20
+  padding-top 20upx
+.p-lr-20
+  padding-left 20upx
+  padding-right 20upx
+
+.p-10
+  padding 10upx
+.p-l-10
+  padding-left 10upx
+.p-t-10
+  padding-top 10upx
+.p-tb-10
+  padding-top 10upx
+  padding-bottom 10upx
+
+.m-b-20
+  margin-bottom 20upx
+
+.m-r-10
+  margin-right 10upx
+.m-t-10
+  margin-top 10upx
+.m-l-10
+  margin-left 10upx
+
+// 图片最大化
+.image-max
+  width 100%
+  image
+    width 100%
+  img
+    width 100%
+
+// 表单
+.form-submit-container
+  padding 80upx
+  .form-submit
+    background-color $colorMain
+    height 80upx
+    line-height 80upx
+    border-radius 40upx
+    font-size 30upx
+    border 0
+    letter-spacing 2upx
+    &:after
+      border 0
+
+// 头像
+.head-circle
+  width 120upx
+  height 120upx
+  border-radius 50%
+  &.head-small
+    width 60upx
+    height 60upx
+
+.b-b
+  border-bottom 1upx solid #F4F4F4
+
+.textMaxLine-1
+  overflow hidden
+  text-overflow ellipsis
+  display box
+  display -webkit-box
+  line-clamp 1
+  -webkit-line-clamp 1
+  -webkit-box-orient vertical
+.textMaxLine-2
+  overflow hidden
+  text-overflow ellipsis
+  display box
+  display -webkit-box
+  line-clamp 2
+  -webkit-line-clamp 2
+  -webkit-box-orient vertical
+
+.grey-bg
+  background #F1F1F1
+  height 20upx
+  width 100%
+
+// 划线
+.text-line
+  text-decoration line-through
+
+// 授权按钮
+.authorize 
+  background $colorMain
+  color $white
+  font-size 32upx
+  width 400upx
+  height 90upx
+  line-height 90upx
+  margin 20upx auto
